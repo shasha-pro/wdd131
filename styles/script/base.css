@@ -1,8 +1,4 @@
 
-.card ul li {
-    margin-bottom: 0.5rem;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -33,3 +29,26 @@ body {
 }
 
 
+.card .content-wrapper p {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    margin-right: 1rem;
+    text-align: justify;
+    margin-top: 3rem;
+}
+
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+body {
+    font-family: "Arimo", sans-serif;
+    font-size: 1.1rem;
+}
