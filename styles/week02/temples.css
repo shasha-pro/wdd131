@@ -47,11 +47,9 @@ h1 {
     right: 0;
     background-color: #060410;
 }
-
 #menu::before {
     content: "≡";
     color: #f4f3fc;
-
 }
 
 #menu:hover {
