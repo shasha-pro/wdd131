@@ -1,0 +1,236 @@
+@media (min-width: 740px) {
+    
+    body {
+        max-width: 100%;
+        font-family: "Roboto", Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        
+        header {
+          background-color: rgb(135, 126, 206);
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding-top: 5px;
+          padding-bottom: 5px;  
+        }
+      
+        h1 {
+          color: rgb(237, 245, 243);
+          text-align: center;
+          font-size: 35px;
+          grid-column: 1 / 2;
+          font-family: "Nunito", sans-serif;
+          font-weight: bold;
+          font-style: normal;
+          margin-left: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+          }
+    
+        .navigation {
+          display: flex;
+          flex-direction: row;
+    
+        }  
+    
+        .navigation a {
+          display: inline;
+          margin-top: 5px;
+          margin-bottom: 5px; 
+          font-size: 20px;
+          font-weight: bold;
+          text-decoration: none;
+          list-style: none;
+          color: white;
+         }
+      
+        nav {
+          background-color: rgb(132, 119, 236);
+          grid-column: 2 / 3 ;
+        }
+      
+        nav ul li {
+          font-weight: bold;
+          text-decoration: none;
+          margin: auto;
+         }
+        
+       nav ul a:link, a:visited, a:active {
+          text-decoration:none;
+          color: white;
+        }
+      
+        nav ul a:visited {
+          color: white;
+        }
+        
+        nav ul a:hover {
+          border-bottom-style:solid ;
+          border-bottom-width: 3px;
+          border-bottom-color: white;
+          }
+    
+        #menu {
+            display: none; /* hide hamburger button */
+          }
+        
+        main {
+          font-size: 15px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+    
+        main h2 {
+          color: black;
+          margin-bottom: 20px;
+          font-size: 40px;
+          text-align: center;
+        }
+      
+        .card-1 {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+    
+        .card-1 img:hover {
+          box-shadow: 3px 3px 10px rgb(11, 11, 11);
+        }
+    
+        figcaption {
+          text-align: center;
+          font-size: 15px;
+          font-style: italic;
+          font-family: "Roboto", sans-serif;
+        }
+    
+        footer {
+          background-color: rgb(182, 37, 44); 
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          grid-column: 1 / 4;
+          color: white;
+          font-size: 15px;
+          text-align: center; 
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    
+        @media (min-width: 1040px) {
+        
+        body{
+        max-width: 100%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        
+        header {
+          background-color: rgb(31, 17, 136);
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          padding-top: 10px;
+          padding-bottom: 10px;  
+        }
+      
+        h1 {
+          color: white;
+          text-align: left;
+          font-size: 30px;
+          grid-column: 1 / 2;
+          font-family: "Nunito", sans-serif;
+          font-weight: bold;
+          font-style: normal;
+          margin-left: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+          }
+      
+        nav {
+          background-color: rgb(28, 13, 148);
+          grid-column: 3 / 5 ;
+        }
+      
+        nav ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          color: white;
+        }
+      
+        nav ul li {
+          font-weight: bold;
+          font-size: 20px;
+          text-decoration: none;
+          margin: auto;
+         }
+        
+        nav ul a:link, a:visited, a:active {
+          text-decoration:none;
+          color: white;
+        }
+      
+        nav ul a:visited {
+          color: white;
+        }
+        
+        nav ul a:hover {
+          border-bottom-style:solid ;
+          border-bottom-width: 3px;
+          border-bottom-color: white;
+          }
+    
+          #menu {
+            display: none; /* hide hamburger button */
+          }
+        
+        main {
+          font-size: 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+    
+        main h2 {
+          color: black;
+          margin-bottom: 20px;
+          font-size: 40px;
+          text-align: center;
+        }
+      
+        .card-1 {
+          display: flex;
+          flex-direction: row;
+          border: 1px solid black;
+          border-radius: 10px;
+          flex-wrap: wrap;
+          align-content: space-between;
+          align-items: flex-start;
+          justify-content: space-between;
+        }
+    
+        .card-1 img:hover {
+          box-shadow: 3px 3px 10px rgb(11, 11, 11);
+        }
+    
+        figcaption {
+          text-align: center;
+          font-size: 15px;
+          font-style: italic;
+          font-family: "Roboto", sans-serif;
+        }
+    
+        footer {
+          background-color: rgb(85, 64, 241); 
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          grid-column: 1 / 4;
+          color: white;
+          font-size: 15px;
+          text-align: center; 
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
