@@ -1,217 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+
+h1 {
+
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	margin: 1rem;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    font-weight: 700;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: center;
+	margin: 1rem;
+    padding-top: 10px;
+}
+
+nav {
+	max-width: 700px;
+}
+
+header {
+
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #FFFFFF;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+.mobile {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+    
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.navigation a:hover {
+
+	font-weight: 700;
+    text-decoration: underline;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.open a:hover {
+
+    background-color: #FFFFFF;
+    color: #f7f0ee ;
+}
+
+
+#lastModified {
+    color: #000047;
+}
+
+.image-grid {
+    display: grid;
+    padding: 0;
+    gap: 0;
+    justify-items: center;
+}
+
+.image-grid img {
+    height: 55vw;
+    align-items: center;
+
+}
+
+.album-content {
+    margin-bottom: 1.5rem;
+}
+
+.image-grid figcaption {
+    padding: 0;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.image-grid figure {
+    margin: 0;
+    padding: 10px;
+
+}
+
 body {
-    max-width: 100%;
-    font-family: "Roboto", sans-serif;
-  }
-
-  header {
-    background-color: rgb(41, 32, 106);
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    text-align: center;
-    color: white;
-  }
-
-  h1 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 2px;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  .navigation {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navigation a {
-    display: none;
-    margin-top: 5px;
-    margin-bottom: 5px; 
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  nav ul a:link, a:visited, a:active {
-    text-decoration:none;
-    color: white;
-  }
-
-  nav ul a:visited {
-    color: white;
-  }
-
-  #menu {
-    font-size: 20px;
-    border: 0;
-    background: none;
-    color: white;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-
-  #menu::before {
-    content: "☰";
-}
-  
-  #menu.open::before {
-    content: "✖";
-  }
-
-  .open a {
-    display: block;
-  }
-  
-  .open a:hover {
-    color: red ;
+    background-color: #fdf4ed; /* white */
+    color: #FFFFFF; /* white */
 }
 
-  h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px
-  }
-  
-  .card-1 {
-    display: flex;
-    flex-direction:column;
-    margin: auto;
-    text-align: center;
-  }
 
-  .card-1 img:hover {
-    box-shadow: 3px 3px 10px rgb(11, 11, 11);
-  }
-
-
-  figure img {
-    max-width: 100%;
-  }
-
-  footer {
-    background-color: rgb(41, 32, 106); 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    grid-column: 1 / 4;
-    color: white;
-    font-size: 15px;
-    text-align: center; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-@media (min-width: 600px) and (max-width: 740px) {
-  
-  body {
-    max-width: 100%;
-    font-family: "Roboto", sans-serif;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 5px; 
-    text-align: center;
-  }
-
-  h1 {
-      font-size: 30px;
-      text-align: center;
-    }
-
-
-  .navigation {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding-inline-start: 5px;
-  }
-
-  .navigation a {
-    display: none;
-    margin-top: 5px;
-    margin-bottom: 5px; 
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-  }
- 
-  nav ul a:link, a:visited, a:active {
-    text-decoration:none;
-    color: white;
-  }
-
-  nav ul a:visited {
-    color: white;
-  }
-
-   #menu {
-      font-size: 20px;
-      border: 0;
-      background: none;
-      color: white;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-
-  #menu::before {
-    content: "☰";
-  }
-  
-  #menu.open::before {
-    content: "✖";
-  }
-
-  .open a {
-    display: block;
-  }
-  
-  .open a:hover {
-    color: red ;
+header, nav {
+    background-color: #34048d ; /* Blue*/
+    color: #FFFFFF; /* White */
 }
 
-  h2 {
+footer {
+    background-color: #110486; /* blue*/
+    color: #FFFFFF; /* White */
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px
-  }
-
-  .card-1{
-    font-size: 15px;
-    line-height: 20px;
-    margin: auto;
-    display: flex;
-    flex-direction:column;
-    margin: auto;
-    text-align: center;
-  }
-
-  .card-1 img:hover {
-    box-shadow: 1px 1px 5px rgb(11, 11, 11);
-  }
-
-  
-  figure img {
-      max-width: 75%;
-  }
-
-  footer {
-    background-color: rgb(41, 32, 106); 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    grid-column: 1 / 4;
-    color: white;
-    font-size: 15px;
-    text-align: center; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+    padding: 10px 0;
 }
+
 
