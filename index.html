@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Patrick S. Dunoh </title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Course Homepage">
+    <meta name="author" content="Patrick S. Dunoh"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <script src="getdates.js" defer></script>
 </head>
+
 <body>
-    <h1> Patrick S. Dunoh</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Patrick S. Dunoh</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/emeksdot/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/88?lang=eng">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me1">
+                <p>Pastrick S. Dunoh is a Liberian Whose live within the territorial city of Montserrado County, Liberia.
+                    and a Trainning and support staff at Soft Solutions and Systems
+                    Patrick s. Dunoh also school at starz college of science and technology & BYU.</p>
+                <img src="images/pat.jpeg" alt="My profile picture">
+            </div>
+            <h3 class="photo-title">Monserrrado, Monrovia Liberia</h3>
+            <hr>
+            <div class="about-me2">
+                <figure>
+                    <img src="images/Liberia Flag.jpg"
+                        alt="The official Flag of the Republic Of Liberia">
+                    <figcaption>The official Flag of the Republic Of Liberia</figcaption>
+                </figure>
+                <p>
+                    Liberia is a country in West Africa founded by free people of color from the United States.
+                   The emigration of African Americans, both freeborn and recently emancipated, 
+                   was funded and organized by the American Colonization Society (ACS).
+                    The mortality rate of these settlers was the highest among settlements reported with modern recordkeeping.
+                     Of the 4,571 emigrants who arrived in Liberia between 1820 and 1843, only 1,819 survived (39.8%).
+                    In 1846, the first black governor of Liberia, Joseph Jenkins Roberts, 
+                    requested the Liberian legislature to declare independence, 
+                    but in a manner that would allow them to maintain contacts with the ACS.
+                     </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.coursera.org/">Coursera</a></li>
+                <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+                <li><a href="https://frontendmasters.com/">Frontend Masters</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>Patrick S. Dunoh, Monrovia Liberia</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
 </body>
-</html>
