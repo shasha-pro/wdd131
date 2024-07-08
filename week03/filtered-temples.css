@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+:root {
+    --primary-color: #485752;
+    --secondary-color: #809990;
+    --accent1-color: #181B1A;
+    --accent2-color: #FFFFFF;
+    --accent3-color: #4D333F;
+
+    --heading-font: 'Roboto Serif', serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #D7DBD9;
+    --nav-link-color: #181B1A;
+    --nav-hover-link-color: #AD8598;
+    --nav-2-hover-link-color: #c2a3b2;
+}
+header {
+    background-color: var(--primary-color);
+    align-items: center;
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1rem 0 0 1rem;
+    margin: 0 0 1rem 0
+}
+#menu {
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0 1.5rem 0 0;
+    color: var(--accent2-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu::before {
+    content: "≡";
+}
+#menu:hover {
+    color: var(--nav-2-hover-link-color);
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: .75rem;
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    transition: 0.25s;
+}
+.navigation a:hover {
+    color: var(--nav-2-hover-link-color);
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "X";
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navigation.show+h1,
+h1.show {
+    display: none;
+}
+main {
+    padding: 0;
+    gap: 0;
+    margin: 0;
+}
+.page-title {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: 2rem 0 .5rem 0;
+    margin: 0;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temple-card {
+    display: block;
+}
+.temple-card-1 {
+    background-color: #d3d3d3;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.label {
+    color: var(--accent3-color);
+    font-weight: 600;
+    font-variant-caps: small-caps;
+}
+p {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+.temple-card h3 {
+    font-family: var(--paragraph-font);
+}
+.temple-card p {
+    font-family: var(--paragraph-font);
+}
+.temple-card img {
+    margin-top: .5rem;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+}
+footer p {
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
